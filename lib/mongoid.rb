@@ -61,7 +61,7 @@ module Mongoid
   #
   # @return [ Mongo::Client ] The default client.
   #
-  # @since 3.0.0
+  # @since 5.0.0
   def default_client
     Clients.default
   end
@@ -75,7 +75,7 @@ module Mongoid
   #
   # @return [ true ] True.
   #
-  # @since 3.1.0
+  # @since 5.0.0
   def disconnect_clients
     Clients.disconnect
   end
@@ -89,7 +89,7 @@ module Mongoid
   #
   # @return [ Mongo::Client ] The named client.
   #
-  # @since 3.0.0
+  # @since 5.0.0
   def client(name)
     Clients.with_name(name)
   end
